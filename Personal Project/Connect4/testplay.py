@@ -1,0 +1,1 @@
+from main_big_bot import play
