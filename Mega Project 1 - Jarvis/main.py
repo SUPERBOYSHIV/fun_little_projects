@@ -12,7 +12,7 @@ import os
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init() 
-newsapi = "b2a672d08e964dfeadfd7725047f16ed"
+newsapi = "<Your NewsAPI>"
 
 def speak_old(text):
     engine.say(text)
@@ -40,7 +40,7 @@ def speak(text):
 
 def aiProcess(command):
     client = Groq(
-        api_key="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"  # Replace with your actual key
+        api_key="<Your API Key>"  # Replace with your actual key
     )
 
     # Send a prompt using Llama 3.3 (70B)
