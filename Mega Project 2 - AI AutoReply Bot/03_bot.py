@@ -8,10 +8,10 @@ import os
 
 
 client = Groq(
-    api_key="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"  # Replace with your actual key
+    api_key="<Your API Key>"  # Replace with your actual key
 )
 
-def is_last_message_from_sender(chat_log, sender_name="Shaurya Gupta"):
+def is_last_message_from_sender(chat_log, sender_name="<Exact Name of the person>"):
     # Split the chat log into individual messages
     messages = chat_log.strip().split("/2026] ")[-1]
     if sender_name in messages:
